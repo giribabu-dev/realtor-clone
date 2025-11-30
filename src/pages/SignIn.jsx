@@ -25,28 +25,34 @@ function SignIn() {
 
     return (
         <section>
+
+            {/* Heading */}
             <h1 className="text-3xl text-center font-bold mt-6">Sign In</h1>
 
-            <div className="flex justify-center flex-wrap items-center px-6 py-12 max-w-6xl mx-auto">
+            <div className="flex flex-wrap items-center px-6 py-12 max-w-6xl mx-auto">
+
+                {/* Left side content */}
                 <div className="md:w-[67%] lg:w-[50%] mb-12 md:mb-6">
                     <img src="https://media.istockphoto.com/id/2162167863/photo/businessman-in-the-logging-in-using-a-secure-web-page.jpg?s=2048x2048&w=is&k=20&c=7-nEK3Wwy6arRcK70BKrD__ove_cnbCikkwe7vhLaX4="
                         alt="sign in"
                         className="w-full rounded-2xl"
                     />
                 </div>
+
+                {/* Right side content */}
                 <div className="w-full md:w-[67%] lg:w-[40%] lg:ml-20">
                     <form>
 
                         {/* Email address */}
                         <input type="email" name="email" placeholder="Email address" value={userData.email}
-                            className="w-full bg-white px-4 py-2 text-xl text-gray-700 border-gray-300 rounded transition ease-in-out"
+                            className="w-full bg-white px-4 py-2 text-xl text-gray-700 border-gray-300 rounded"
                             onChange={handleUserData}
                         />
 
                         {/* Password */}
                         <div className="relative my-6">
                             <input type={showPassword ? "text" : "password"} name="password" placeholder="Password" value={userData.password}
-                                className="w-full bg-white px-2 py-2 text-xl text-gray-700 border-gray-300 rounded transition ease-in-out"
+                                className="w-full bg-white px-2 py-2 text-xl text-gray-700 border-gray-300 rounded"
                                 onChange={handleUserData}
                             />
                             {showPassword ?
@@ -56,8 +62,8 @@ function SignIn() {
                             }
                         </div>
 
-                        {/* Register & forgot password links */}
-                        <div className="flex justify-between whitespace-nowrap mb-5 text-sm lg:text-xl">
+                        {/* Sign up & forgot password links */}
+                        <div className="flex justify-between whitespace-nowrap mb-5">
                             <p>Don't have an account?
                                 <Link to={'/sign-up'}
                                     className="text-red-600 hover:text-red-700 transition duration-200 ease-in-out ms-1">
