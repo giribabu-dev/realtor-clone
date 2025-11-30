@@ -4,7 +4,7 @@ function GoogleAuth() {
     return (
         <>
             <div 
-                className="my-4 flex items-center before:border-t-2 before:flex-1 before:border-gray-300
+                className="my-5 flex items-center before:border-t-2 before:flex-1 before:border-gray-300
                     after:border-t-2 after:flex-1 after:border-gray-300"
             
             >

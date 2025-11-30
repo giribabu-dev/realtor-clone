@@ -57,7 +57,7 @@ function SignIn() {
                         </div>
 
                         {/* Register & forgot password links */}
-                        <div className="flex justify-between text-sm whitespace-nowrap sm:text-lg mb-5">
+                        <div className="flex justify-between whitespace-nowrap mb-5 text-sm lg:text-xl">
                             <p>Don't have an account?
                                 <Link to={'/sign-up'}
                                     className="text-red-600 hover:text-red-700 transition duration-200 ease-in-out ms-1">
